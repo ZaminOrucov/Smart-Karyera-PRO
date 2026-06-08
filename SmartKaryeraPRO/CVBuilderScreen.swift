@@ -37,8 +37,6 @@ struct CVBuilderScreen: View {
                         TextField("Bacarıqlar (məs: Swift, SQL, Liderlik...)", text: $skills)
                     }
                 }
-                
-                // 🔹 CV Preview
                 ScrollView {
                     CVPreview(
                         name: fullName,
@@ -50,8 +48,6 @@ struct CVBuilderScreen: View {
                     )
                 }
                 .padding()
-                
-                // 🔹 PDF Export düyməsi
                 Button(action: {
                     generatePDF(
                         name: fullName,
@@ -62,7 +58,7 @@ struct CVBuilderScreen: View {
                         skills: skills
                     )
                 }) {
-                    Text("📄 PDF olaraq yüklə")
+                    Text("📄 PDF yüklə")
                         .frame(maxWidth: .infinity)
                         .padding()
                         .background(Color.blue)
@@ -75,8 +71,6 @@ struct CVBuilderScreen: View {
         }
     }
 }
-
-// 🔹 CV Preview Component
 struct CVPreview: View {
     var name: String
     var email: String
@@ -109,7 +103,6 @@ struct CVPreview: View {
     }
 }
 
-// 🔹 PDF Export Funksiyası
 func generatePDF(name: String, email: String, phone: String,
                  education: String, experience: String, skills: String) {
     
@@ -138,7 +131,7 @@ func generatePDF(name: String, email: String, phone: String,
                   withAttributes: bodyAttributes)
     }
     
-    // PDF faylı sənədlər qovluğuna yazır
+
     let url = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
         .appendingPathComponent("CV.pdf")
     try? data.write(to: url)
