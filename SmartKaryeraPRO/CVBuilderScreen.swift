@@ -1,9 +1,4 @@
-//
-//  CVBuilderScreen.swift
-//  SmartKaryeraPRO
-//
-//  Created by Zamin Orucov on 8/27/25.
-//
+
 import SwiftUI
 import PDFKit
 
