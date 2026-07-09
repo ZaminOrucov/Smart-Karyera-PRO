@@ -1,9 +1,4 @@
-//
-//  Certificatewiev.swift
-//  SmartKaryeraPRO
-//
-//  Created by Zamin Orucov on 9/11/25.
-//
+
 
 import SwiftUI
 
