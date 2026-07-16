@@ -1,10 +1,3 @@
-//
-//  EmployersScreen.swift
-//  SmartKaryeraPRO
-//
-//  Created by Zamin Orucov on 8/28/25.
-//
-
 import SwiftUI
 
 struct EmployersScreen: View {
