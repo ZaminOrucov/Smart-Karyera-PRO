@@ -77,8 +77,6 @@ struct BranchCard: View {
         .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 3)
     }
 }
-
-// ==================== Branch Model ====================
 struct Branch {
     let name: String
     let manager: String
