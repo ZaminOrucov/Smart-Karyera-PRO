@@ -1,9 +1,3 @@
-//
-//  CareerPortalView.swift
-//  SmartKaryeraPRO
-//
-//  Created by Zamin Orucov on 8/26/25.
-//
 import SwiftUI
 
 struct CareerPortalView: View {
@@ -13,8 +7,6 @@ struct CareerPortalView: View {
         NavigationStack{
             ScrollView {
                 VStack(spacing: 20) {
-                    
-                    // 🔹 Slider hissəsi
                     TabView {
                         ForEach(sliderIcons, id: \.self) { icon in
                             ZStack {
