@@ -1,9 +1,4 @@
-//
-//  AboutAgencyView.swift
-//  SmartKaryeraPRO
-//
-//  Created by Zamin Orucov on 8/26/25.
-//
+
 
 import SwiftUI
 
